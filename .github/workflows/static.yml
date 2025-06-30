@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Massari - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px;
+            background-color: #111827;
+            color: #f3f4f6;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            min-height: calc(100vh - 60px);
+        }
+        .section.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .rounded-image {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <nav class="fixed top-0 left-0 w-full bg-gray-800 p-4 z-50">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="#accueil" class="text-white hover:text-blue-300" onclick="showSection('accueil')">Accueil</a></li>
+            <li><a href="#projets" class="text-white hover:text-blue-300" onclick="showSection('projets')">Projets</a></li>
+            <li><a href="#stage" class="text-white hover:text-blue-300" onclick="showSection('stage')">Stage</a></li>
+            <li><a href="#epreuves" class="text-white hover:text-blue-300" onclick="showSection('epreuves')">Épreuves</a></li>
+            <li><a href="#veille" class="text-white hover:text-blue-300" onclick="showSection('veille')">Veille</a></li>
+            <li><a href="#contact" class="text-white hover:text-blue-300" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#mentions" class="text-white hover:text-blue-300" onclick="showSection('mentions')">Mentions Légales</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil" class="section active flex flex-col justify-center items-center text-center bg-gradient-to-r from-indigo-900 to-blue-900 text-white fade-in">
+        <div class="flex flex-col items-center gap-4 p-4">
+            <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A3.001 3.001 0 016 15h.01a6.992 6.992 0 0113.138-3.504A3.5 3.5 0 1121 15h-1.25a2.25 2.25 0 100 4.5h-15a2.25 2.25 0 100-4.5H3a3 3 0 012.121 2.804z" />
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold">Nicolas Massari</h1>
+            <p class="mt-2 text-xl">Étudiant en BTS SIO - Option SISR</p>
+            <p class="mt-1">Lycée Marguerite Jauzelon - Saint-Denis, La Réunion</p>
+            <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/4be9/6a87/-ac9/d-4bd3-a8c8-f795b9e465d1/image.jpg" alt="Illustration Accueil" class="mt-4 rounded-image">
+        </div>
+    </section>
+
+    <section id="projets" class="section">
+        <div class="max-w-4xl mx-auto p-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Projets</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">AP 0</h3>
+                    <p class="mt-2">Cet atelier a consisté à préparer une candidature pour rejoindre l'équipe informatique de la Maison des Sports de la Réunion (MS2R), incluant la rédaction d'un CV, d'une lettre de motivation et la création d'un pitch vidéo.</p>
+                    <p class="mt-2 font-semibold">Compétences mobilisées :</p>
+                    <ul class="list-disc ml-6">
+                        <li>Organiser son développement professionnel</li>
+                        <li>Gérer son identité professionnelle</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/9c5b/8817/-5b9/2-45a7-943d-beb98be0ade7/image.jpg" alt="Illustration Projet AP 0" class="mt-4 rounded-image">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">AP 1</h3>
+                    <p class="mt-2">Le projet consistait à moderniser le site de la MS2R en le migrant vers un CMS pour une gestion simplifiée. Après une comparaison entre Joomla et WordPress, le site a été transposé, avec des améliorations du design, de l’ergonomie et l’ajout d’un formulaire de contact.</p>
+                    <p class="mt-2 font-semibold">Compétences mobilisées :</p>
+                    <ul class="list-disc ml-6">
+                        <li>Développer la présence en ligne de l’organisation</li>
+                        <li>Participer à l’évolution d’un site Web exploitant les données de l’organisation</li>
+                        <li>Travailler en mode projet</li>
+                        <li>Analyser les objectifs et les modalités d’organisation d’un projet</li>
+                        <li>Planifier les activités</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/2db1/70a9/-dc3/2-4f2a-a78b-063852e4aa34/image.jpg" alt="Illustration Projet AP 1" class="mt-4 rounded-image">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">AP 2</h3>
+                    <p class="mt-2">Cet atelier concerne la gestion du parc informatique de la Maison des Sports de la Réunion (MS2R), incluant la mise à jour de l’infrastructure réseau, l’intégration de nouveaux postes et le développement d’une application web pour la gestion des équipements informatiques.</p>
+                    <p class="mt-2 font-semibold">Compétences mobilisées :</p>
+                    <ul class="list-disc ml-6">
+                        <li>Travailler en mode projet</li>
+                        <li>Analyser les objectifs et les modalités d’organisation d’un projet</li>
+                        <li>Planifier les activités</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/7675/a12f/-82c/b-45b6-a930-f13bc9ec225c/image.jpg" alt="Illustration Projet AP 2" class="mt-4 rounded-image">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">AP 3</h3>
+                    <p class="mt-2">L’atelier porte sur la gestion de la présence en ligne de la Maison des Sports de la Réunion (MS2R). Il implique la création d’un serveur web sécurisé et la mise à jour de la base de données des membres, en collaboration avec les responsables du service "Système d’information".</p>
+                    <p class="mt-2 font-semibold">Compétences mobilisées :</p>
+                    <ul class="list-disc ml-6">
+                        <li>Développer la présence en ligne de l’organisation</li>
+                        <li>Participer à l’évolution d’un site Web exploitant les données de l’organisation</li>
+                        <li>Travailler en mode projet</li>
+                        <li>Analyser les objectifs et les modalités d’organisation d’un projet</li>
+                        <li>Planifier les activités</li>
+                        <li>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/0ec1/bf94/-fe0/b-435e-8081-17ec64ddfa45/image.jpg" alt="Illustration Projet AP 3" class="mt-4 rounded-image">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">AP 4</h3>
+                    <p class="mt-2">L’atelier vise à mettre en place un environnement web sécurisé pour la Maison des Sports de la Réunion (MS2R). Il comprend la configuration d’un serveur accessible via un nom de domaine interne, l’hébergement du site MS2R avec sécurisation FTP, et la mise en place de sauvegardes automatiques.</p>
+                    <p class="mt-2 font-semibold">Compétences mobilisées :</p>
+                    <ul class="list-disc ml-6">
+                        <li>Travailler en mode projet</li>
+                        <li>Analyser les objectifs et les modalités d’organisation d’un projet</li>
+                        <li>Planifier les activités</li>
+                        <li>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/5cda/07e5/-7fd/e-429a-b3a1-757b88021ee8/image.jpg" alt="Illustration Projet AP 4" class="mt-4 rounded-image">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">AP 5</h3>
+                    <p class="mt-2">Le projet vise à développer et héberger une application Web sécurisée pour la gestion des frais de déplacement des visiteurs médicaux du laboratoire GSB. Il inclut la validation comptable des frais, la mise en place d’un serveur Debian sécurisé, et la gestion de bases de données distantes.</p>
+                    <p class="mt-2 font-semibold">Compétences mobilisées :</p>
+                    <ul class="list-disc ml-6">
+                        <li>Développer la présence en ligne de l’organisation</li>
+                        <li>Participer à l’évolution d’un site Web exploitant les données de l’organisation</li>
+                        <li>Participer à la valorisation de l’image de l’organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques</li>
+                        <li>Travailler en mode projet</li>
+                        <li>Analyser les objectifs et les modalités d’organisation d’un projet</li>
+                        <li>Planifier les activités</li>
+                        <li>Évaluer les indicateurs de suivi d’un projet et analyser les écarts</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/5794/e818/-005/2-4b6e-8047-142b574f8c83/image.jpg" alt="Illustration Projet AP 5" class="mt-4 rounded-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stage" class="section">
+        <div class="max-w-4xl mx-auto p-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Stage</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Stage de première année</h3>
+                <p class="mt-2">Lors de mon stage chez STOR Solutions, j’ai été intégré à une équipe technique chargée de l’installation, de la configuration et de la maintenance de parcs informatiques pour des clients professionnels.</p>
+                <p class="mt-2">J’ai également participé à la rédaction de comptes rendus techniques, au support utilisateur (à distance et sur site), ainsi qu’à la mise en place de procédures de sauvegarde.</p>
+                <p class="mt-2">Cette expérience m’a permis de développer mes compétences en administration système et réseau, tout en découvrant les réalités du travail en entreprise.</p>
+                <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/a468/ac85/-b90/6-4a83-a40e-14bee645bb5f/image.jpg" alt="Illustration Stage" class="mt-4 rounded-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="epreuves" class="section">
+        <div class="max-w-4xl mx-auto p-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Épreuves</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">E5</h3>
+                    <p class="mt-2">Cette épreuve vise à évaluer l’acquisition des compétences du bloc 1 : « Support et mise à disposition de services informatiques », à savoir :</p>
+                    <ul class="list-disc ml-6 mt-2">
+                        <li>Répondre aux incidents et aux demandes d’assistance ou d’évolution des utilisateurs.</li>
+                        <li>Mettre en place et gérer les services informatiques.</li>
+                        <li>Assurer la maintenance et le support des infrastructures.</li>
+                        <li>Veiller au bon fonctionnement des applications et services mis à disposition.</li>
+                        <li>S’assurer de la sécurité des services et de la conformité aux normes en vigueur.</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/95d1/9600/-96b/a-487e-9152-2ffbc9117c24/image.jpg" alt="Illustration Épreuve E5" class="mt-4 rounded-image">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">E6</h3>
+                    <p class="mt-2">Cette épreuve évalue l’acquisition des compétences en gestion de projet informatique, développement, réseaux et sécurité. Elle vise notamment la capacité à :</p>
+                    <ul class="list-disc ml-6 mt-2">
+                        <li>Mettre en place et administrer une infrastructure réseau et système dans un contexte professionnel donné.</li>
+                        <li>Assurer la disponibilité, la sécurité et la maintenance des services informatiques.</li>
+                        <li>Appliquer une démarche méthodique et structurée dans la résolution d’incidents ou la mise en place d’un projet d’administration.</li>
+                    </ul>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/1699/750d/-2bd/9-44c2-96a4-0f0356d3ce5f/image.jpg" alt="Illustration Épreuve E6" class="mt-4 rounded-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="section">
+        <div class="max-w-4xl mx-auto p-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Veille</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Veille Technologique</h3>
+                    <p class="mt-2">La veille technologique consiste à surveiller en continu les avancées dans un domaine précis afin de s’adapter aux évolutions et aux nouvelles menaces.</p>
+                    <p class="mt-2 font-semibold">Thème de ma veille : Cybersécurité</p>
+                    <p class="mt-2">J’ai choisi la cybersécurité comme thème principal de ma veille, car les cyberattaques (ransomwares, phishing...) sont de plus en plus fréquentes et touchent tous les secteurs.</p>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/a468/ac85/-b90/6-4a83-a40e-14bee645bb5f/image.jpg" alt="Illustration Veille Technologique" class="mt-4 rounded-image">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Veille Juridique</h3>
+                    <p class="mt-2">Une veille juridique est un ensemble d’actions permettant de se tenir au fait des informations pertinentes dans les domaines législatif, réglementaire, jurisprudentiel, voire doctrinal.</p>
+                    <p class="mt-2">Avec l’évolution rapide des technologies, les lois s’adaptent en permanence pour protéger les utilisateurs et encadrer les pratiques numériques.</p>
+                    <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/95d1/9600/-96b/a-487e-9152-2ffbc9117c24/image.jpg" alt="Illustration Veille Juridique" class="mt-4 rounded-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="max-w-md mx-auto p-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Contact</h2>
+            <p class="mb-4 text-center">Vous avez une question ? Envoyez-moi un message, et je vous répondrai dès que possible !</p>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-300">Nom *</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-gray-700 text-white">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-300">Adresse e-mail *</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-gray-700 text-white">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-300">Message *</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-gray-700 text-white"></textarea>
+                </div>
+                <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Envoyer le formulaire
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="mentions" class="section">
+        <div class="max-w-4xl mx-auto p-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Mentions Légales</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <p class="mt-2">Ce site est la propriété de Nicolas Massari. Tous droits réservés.</p>
+                <p class="mt-2">Les contenus présentés sur ce site sont protégés par les lois sur le droit d'auteur. Toute reproduction ou utilisation non autorisée est interdite.</p>
+                <p class="mt-2">Pour toute question ou demande d'information, vous pouvez me contacter via la section contact.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-4 text-center text-sm text-gray-400 bg-gray-900">
+        <p>&copy; 2025 Nicolas Massari. Portfolio hébergé sur GitHub Pages.</p>
+        <p>Site personnel à but non commercial. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
